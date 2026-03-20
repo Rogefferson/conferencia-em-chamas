@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guia do Conferencista – Conferência em Chamas 2026</title>
+
+  <!-- Fontes do Google -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Estilos Externos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SEÇÃO HERO (TOPO) -->
+  <section class="hero">
+    <!-- Logo e Identificação do Evento -->
+    <!-- Logo Superior -->
+    <div class="hero-logo-box">
+      <img src="logo-sem-fundo-chamas.png" alt="Conferência em Chamas 2026" class="hero-logo">
+    </div>
+
+    <!-- Ministros e Nomes -->
+    <div class="hero-ministers-box">
+      <img src="ministros-nomes-conf.png" alt="Ministros e Nome" class="hero-ministers">
+    </div>
+
+    <!-- Descrições de apoio -->
+    <div class="hero-content-group">
+      <div class="hero-guide">Guia do Conferencista</div>
+      <p class="hero-tagline">Prepare-se para viver dias em chamas.</p>
+      <p class="hero-desc">Confira as informações abaixo e aproveite todos os momentos.</p>
+    </div>
+
+    <!-- Indicador de Scroll -->
+    <a href="#intro" class="hero-arrow">⌄</a>
+  </section>
+
+  <!-- SEÇÃO INTRO -->
+  <section id="intro" class="intro">
+    <h2>Um tempo para ser tomado pelo <em>Fogo!</em></h2>
+    <p>Este guia é seu companheiro para vivenciar cada momento desta conferência — com todas as rotas, horários,
+      orientações
+      e dicas que você precisa para aproveitar ao máximo. Acesse tudo de forma rápida e eficaz.</p>
+    <p>Saiba onde ir, quando ir, o que esperar e como se preparar. Tudo isso concentrado neste guia pensado
+      especialmente para você.</p>
+
+    <div class="pastor-photo-wrap">
+      <img src="p-a-l-2.png" alt="Pastor Verbo da Vida Ibura" class="pastor-full-photo">
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CONTEÚDO EM ABAS (TABS) -->
+  <div class="tabs-section">
+    <!-- Navegação das Abas -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab('local',this)">LOCAL</button>
+      <button class="tab-btn" onclick="switchTab('horarios',this)">HORÁRIOS</button>
+      <button class="tab-btn" onclick="switchTab('avisos',this)">AVISOS</button>
+    </div>
+
+    <!-- Conteúdo da Aba: LOCAL -->
+    <div id="tab-local" class="tab-content active">
+      <div class="addr-card">
+        <div class="icon">
+          <div class="pin-wrapper">
+            <svg class="pin-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 15.022 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <div class="pin-shadow"></div>
+          </div>
+        </div>
+        <div class="text">
+          <strong> R. Rio Brígida, 350 - Ibura</strong><br>
+          Recife/PE.
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;line-height:1.6;">
+        A <strong style="color:var(--text-light);">Conferência em Chamas</strong> 2026 será realizada na <strong
+          style="color:var(--text-light);">Igreja Verbo da Vida Ibura.</strong> Acesse o mapa abaixo!
+      </p>
+      <div class="church-placeholder">
+        <img src="frente-igreja.png" alt="Igreja Verbo da Vida Ibura">
+      </div>
+      <!-- Incorporação do Google Maps -->
+      <div class="map-outer">
+        <a class="map-open-btn" href="https://maps.app.goo.gl/aaigqNikPZEVuu15A" target="_blank">Abrir no Maps ↗</a>
+        <iframe src="https://www.google.com/maps?q=Igreja+Verbo+da+Vida+Ibura,+Recife&hl=pt-br&z=15&output=embed"
+          allowfullscreen="" loading="lazy" title="Mapa">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Conteúdo da Aba: HORÁRIOS -->
+    <div id="tab-horarios" class="tab-content">
+      <div class="prog-note">Fique atento aos horários e chegue com antecedência.</div>
+      <div class="sched-items">
+        <div class="sched-row">
+          <div class="sched-day">Quinta-feira</div>
+          <div class="sched-time"><strong>Noite</strong> — 19h30</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-day">Sexta-feira</div>
+          <div class="sched-time"><strong>Manhã</strong> — 09h30</div>
+          <div class="sched-time"><strong>Noite</strong> — 19h00</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-day">Sábado</div>
+          <div class="sched-time"><strong>Manhã</strong> — 09h30</div>
+          <div class="sched-time"><strong>Noite</strong> — 19h00</div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-day">Domingo</div>
+          <div class="sched-time"><strong>Manhã</strong> — 09h30</div>
+          <div class="sched-time"><strong>Noite</strong> — 18h00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo da Aba: AVISOS -->
+    <div id="tab-avisos" class="tab-content">
+      <div class="notice-list">
+        <div class="notice-row"><span class="notice-dash">–</span><span><strong>Não entrar</strong> com alimentação e
+            copos de bebidas diversas no Templo; use sua garrafa de água.</span></div>
+        <div class="notice-row"><span class="notice-dash">–</span><span>Pedimos para <strong>não guardar</strong>
+            lugar.</span></div>
+        <div class="notice-row"><span class="notice-dash">–</span><span><strong>Deixar seu</strong> celular em modo
+            avião.</span></div>
+        <div class="notice-row"><span class="notice-dash">–</span><span>O <strong>VerboShop</strong> funcionará antes
+            dos cultos e também nos intervalos da programação.</span></div>
+        <div class="notice-row"><span class="notice-dash">–</span><span>Não entrar com garrafinha sem tampa, copos,
+            comida e chiclete <strong>no auditório</strong>.</span></div>
+        <div class="notice-row"><span class="notice-dash">–</span><span>A pulseira é de <strong>uso obrigatório</strong>
+            durante todo o evento.</span></div>
+        <div class="notice-row"><span class="notice-dash">–</span><span>Fique atento aos horários das
+            programações.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO DEPARTAMENTO INFANTIL -->
+  <section class="infantil">
+    <div class="kicker">Para pais e responsáveis</div>
+    <h2 class="sec-heading">Avisos <span class="gold">Departamento Infantil</span></h2>
+    <p class="sec-body">Para garantir a segurança e o bem-estar de todas as crianças, pedimos que leiam com atenção as
+      orientações abaixo antes de chegar ao evento.</p>
+    <div class="child-cards">
+      <div class="child-card">
+        <div class="child-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-users">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <div class="child-title">Entrada e Saída</div>
+        <p class="child-text">Todas as crianças devem ser <strong>levadas à sala por seus responsáveis</strong> e
+          somente poderão sair com os mesmos ao final do culto.</p>
+      </div>
+      <!-- Mais cards infra... -->
+      <div class="child-card">
+        <div class="child-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-id-card">
+            <path d="M16 10h2" />
+            <path d="M16 14h2" />
+            <path d="M6.17 15a3 3 0 0 1 5.66 0" />
+            <circle cx="9" cy="11" r="2" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
+          </svg>
+        </div>
+        <div class="child-title">Pertences e Identificação</div>
+        <p class="child-text">Para o <strong>berçário</strong> e a <strong>sala de 2 e 3 anos</strong>, os pais devem
+          entregar pertences <strong>devidamente identificados</strong>.</p>
+      </div>
+      <div class="child-card">
+        <div class="child-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-apple">
+            <path
+              d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z" />
+            <path d="M10 2c1 .5 2 2 2 5" />
+          </svg>
+        </div>
+        <div class="child-title">Restrições Alimentares</div>
+        <p class="child-text"><strong>Informe ao professor</strong> caso a criança possua qualquer tipo de restrição
+          alimentar.</p>
+      </div>
+      <div class="child-card">
+        <div class="child-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-monitor-smartphone">
+            <path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" />
+            <path d="M10 19v-3.96 3.15" />
+            <path d="M7 19h5" />
+            <rect width="6" height="10" x="16" y="12" rx="2" />
+          </svg>
+        </div>
+        <div class="child-title">Chamada pelo Telão</div>
+        <p class="child-text">Fiquem <strong>atentos ao telão</strong>. Caso necessário, os pais serão chamados pelo
+          número da entrada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PARCEIROS (ALIMENTAÇÃO / HOTÉIS) -->
+  <section class="partners">
+    <div class="partners-header">
+      <div class="partners-icon-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-building-2">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+          <path d="M10 6h4" />
+          <path d="M10 10h4" />
+          <path d="M10 14h4" />
+          <path d="M10 18h4" />
+        </svg>
+      </div>
+      <h2 class="partners-title">Parceiros</h2>
+    </div>
+    <div class="partner-cards">
+      <!-- Exemplo de Card de Parceiro -->
+      <a href="#" class="partner-card">
+        <div class="partner-img" style="background: #252525;">
+          <img src="VERBOSHOP.png" alt="Verbo Shop" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div class="partner-body">
+          <div class="partner-name">VERBO SHOP</div>
+          <div class="partner-note">Consulte descontos especiais.</div>
+        </div>
+      </a>
+      <a href="#" class="partner-card">
+        <div class="partner-img" style="background: #252525;">
+          <img src="RESPLANDECERBURGUER.png" alt="Resplandecer Burguer"
+            style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div class="partner-body">
+          <div class="partner-name">RESPLANDECER BURGUER</div>
+          <div class="partner-note">Consulte os nossos combos especiais.</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CANTINAS -->
+  <!-- <section class="cantinas">
+    <div class="cant-header">
+      <div class="cant-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-coffee">
+          <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+          <line x1="6" x2="6" y1="2" y2="4" />
+          <line x1="10" x2="10" y1="2" y2="4" />
+          <line x1="14" x2="14" y1="2" y2="4" />
+        </svg>
+      </div>
+      <h2 class="cant-title">Nossas Cantinas</h2>
+      <p class="cant-sub">Opções para seu lanche durante os intervalos</p>
+    </div>
+    <div class="cant-list"> -->
+  <!-- Item sanfona de Cantina -->
+  <!-- <div class="cant-item">
+        <div class="cant-head" onclick="toggleCantina(this)">
+          <span class="cant-head-name">Cantina Principal</span>
+          <span class="cant-toggle">▼</span>
+        </div>
+        <div class="cant-body">
+          <ul class="cant-menu">
+            <li>Salgados diversos</li>
+            <li>Sucos e Refrigerantes</li>
+            <li>Café e Bolos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- SEÇÃO AVALIAÇÃO FINAL -->
+  <section class="eval">
+    <div class="eval-kicker">SUA OPINIÃO É IMPORTANTE</div>
+    <h2 class="eval-title">Compartilhe sua experiência</h2>
+    <p class="eval-desc">Nos ajude a melhorar as próximas edições deixando seu feedback sobre sua experiência.</p>
+    <a href="#" class="eval-btn">Responder Pesquisa</a>
+    <div class="eval-video-container">
+      <video src="conf-vid-1.mp4" controls autoplay loop muted playsinline></video>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2026 Conferência em Chamas. Todos os direitos reservados.<br>
+    Igreja Verbo da Vida Ibura - Recife/PE.
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <a href="#" class="scroll-top">↑</a>
+
+  <!-- SCRIPTS DE INTERATIVIDADE -->
+  <script>
+    // Função para alternar entre as abas principais (Local / Horários)
+    function switchTab(id, btn) {
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    // Função para alternar a sub-aba de Avisos
+    function switchTabSub(id, btn) {
+      const content = document.getElementById('tab-' + id);
+      content.classList.toggle('active');
+      btn.classList.toggle('active');
+    }
+
+    // Função para abrir/fechar as cantinas (acordeão)
+    function toggleCantina(head) {
+      const item = head.parentElement;
+      item.classList.toggle('open');
+    }
+
+    // Monitoramento do scroll para mostrar/esconder o botão de voltar ao topo
+    window.addEventListener('scroll', () => {
+      const btn = document.querySelector('.scroll-top');
+      btn.style.opacity = window.scrollY > 300 ? '1' : '0';
+    });
+  </script>
+
+</body>
+
+</html>
