@@ -142,6 +142,20 @@ body {
   /* Deixa o espaço para a seta no final */
 }
 
+/* Ajustes para telas pequenas (iPhone SE) para evitar sobreposição na section hero */
+@media (max-width: 380px) and (max-height: 700px) {
+  .hero-logo-box {
+    margin-top: -30px;
+  }
+  .hero-ministers-box {
+    margin-top: -35px;
+  }
+  .hero-content-group {
+    top: 0;
+    margin-top: -10px;
+  }
+}
+
 .hero-logo-box .year::before,
 .hero-logo-box .year::after {
   content: '——';
