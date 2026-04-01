@@ -142,9 +142,12 @@ body {
 }
 
 @media (min-width: 768px) {
+  .hero-ministers-box {
+    padding-bottom: 25%;
+  }
   .hero-content-group {
-    top: -10px;
-    margin-top: -10px;
+    top: 0;
+    margin-top: 40px;
   }
 }
 
@@ -1135,5 +1138,37 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+
+  /* Ajustes Hero para Monitores Grandes (Ex: 27 polegadas) */
+  .hero-logo {
+    max-width: 480px;
+    padding-top: 4vh;
+  }
+
+  .hero-ministers-box {
+    max-width: 1000px;
+    padding-bottom: 15%;
+  }
+
+  .hero-content-group {
+    margin-top: 40px;
+  }
+
+  .hero-guide {
+    font-size: 16px;
+    letter-spacing: .4em;
+    margin-bottom: 20px;
+  }
+
+  .hero-tagline {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .hero-desc {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.8;
   }
 }
