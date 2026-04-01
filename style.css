@@ -135,24 +135,33 @@ body {
 
 .hero-content-group {
   position: relative;
-  top: -30px;
-  margin-top: -50px;
-  /* Combinando margem e posição para garantir o movimento */
+  top: 0;
+  margin-top: 80px;
   margin-bottom: auto;
-  /* Deixa o espaço para a seta no final */
+  z-index: 2;
 }
 
-/* Ajustes para telas pequenas (iPhone SE) para evitar sobreposição na section hero */
-@media (max-width: 380px) and (max-height: 700px) {
-  .hero-logo-box {
-    margin-top: -30px;
-  }
-  .hero-ministers-box {
-    margin-top: -35px;
-  }
+@media (min-width: 768px) {
   .hero-content-group {
-    top: 0;
+    top: -10px;
     margin-top: -10px;
+  }
+}
+
+/* Ajustes globais para telas pequenas e médias (evitar sobreposição na section hero causada pelo scale) */
+@media (max-width: 767px) {
+  .hero-logo-box {
+    margin-top: -10px;
+  }
+
+  .hero-ministers-box {
+    margin-top: -20px;
+    padding-bottom: 40%; /* Cria um bolsão vazio que abraça o vazamento inferior da imagem esticada */
+  }
+
+  .hero-content-group {
+    margin-top: 60px;
+    transform: translateY(20px);
   }
 }
 
@@ -1052,4 +1061,79 @@ footer {
   z-index: 999;
   backdrop-filter: blur(4px);
   transition: opacity .2s;
+}
+
+/* =========================================
+   RESPONSIVIDADE: TABLETS E DESKTOPS
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .intro,
+  .tabs-section,
+  .infantil,
+  .partners,
+  .menu-resplandecer,
+  .cantinas,
+  .eval,
+  footer {
+    padding-left: max(24px, calc((100vw - 800px) / 2));
+    padding-right: max(24px, calc((100vw - 800px) / 2));
+  }
+
+  .child-cards,
+  .partner-cards,
+  .cant-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .intro h2 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .intro p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .intro,
+  .tabs-section,
+  .infantil,
+  .partners,
+  .menu-resplandecer,
+  .cantinas,
+  .eval,
+  footer {
+    padding-left: max(24px, calc((100vw - 1100px) / 2));
+    padding-right: max(24px, calc((100vw - 1100px) / 2));
+  }
+
+  .child-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .map-outer {
+    height: 450px;
+  }
+
+  .intro h2 {
+    font-size: 3.5rem;
+  }
+
+  .sched-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .notice-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 }
